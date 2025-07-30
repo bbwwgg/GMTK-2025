@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "macro",
+  "name": "player_on_board",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "BLANK GAME",
-    "path": "BLANK GAME.yyp",
+    "name": "player board scripts",
+    "path": "folders/Board/player board scripts.yy",
   },
 }

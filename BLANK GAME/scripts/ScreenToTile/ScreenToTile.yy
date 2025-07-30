@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "get_ease_data",
+  "name": "ScreenToTile",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Camera",
-    "path": "folders/Camera.yy",
+    "name": "Board",
+    "path": "folders/Board.yy",
   },
 }

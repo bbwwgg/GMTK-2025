@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "group1",
-    "path": "folders/group1.yy",
+    "name": "BLANK GAME",
+    "path": "BLANK GAME.yyp",
   },
 }

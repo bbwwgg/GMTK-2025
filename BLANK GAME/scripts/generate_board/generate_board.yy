@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "board generation",
-    "path": "folders/group1/Board/board generation.yy",
+    "name": "Board",
+    "path": "folders/Board.yy",
   },
 }

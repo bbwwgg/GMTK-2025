@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "pathfinding",
-    "path": "folders/group1/Board/pathfinding.yy",
+    "name": "Board",
+    "path": "folders/Board.yy",
   },
 }

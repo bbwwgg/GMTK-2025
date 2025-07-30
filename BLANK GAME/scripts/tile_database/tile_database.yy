@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "get_ease_data",
+  "name": "tile_database",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Camera",
-    "path": "folders/Camera.yy",
+    "name": "Databases",
+    "path": "folders/Databases.yy",
   },
 }

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "get_ease_data",
+  "name": "player_dragging_camera",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Camera",
-    "path": "folders/Camera.yy",
+    "name": "player board scripts",
+    "path": "folders/Board/player board scripts.yy",
   },
 }

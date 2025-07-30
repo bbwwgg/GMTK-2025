@@ -21,7 +21,3 @@ global.map = generate_board(-1, global.board_width, global.board_height)
 	
 setup_board_camera()
 
-
-//check_selection_area();
-outline_init()
-

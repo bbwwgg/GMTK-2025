@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Board",
-    "path": "folders/group1/Board.yy",
+    "path": "folders/Board.yy",
   },
 }

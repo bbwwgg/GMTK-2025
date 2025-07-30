@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Cellular Automata",
-    "path": "folders/group1/Board/board generation/Cellular Automata.yy",
+    "path": "folders/Board/Cellular Automata.yy",
   },
 }
