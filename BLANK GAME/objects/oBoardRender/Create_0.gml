@@ -16,7 +16,7 @@ state = TILEMAP_STATE.ENTER
 
 time = 0
 
-global.map = generate_board(-1, global.board_width, global.board_height)
+global.map = generate_board(global.biom, global.board_width, global.board_height)
 
 	
 setup_board_camera()

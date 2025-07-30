@@ -2,10 +2,10 @@
   "FolderOrderSettings": [
     {"name":"Board","order":4,"path":"folders/Board.yy",},
     {"name":"Cellular Automata","order":2,"path":"folders/Board/Cellular Automata.yy",},
+    {"name":"player board scripts","order":7,"path":"folders/Board/player board scripts.yy",},
     {"name":"Sprites","order":4,"path":"folders/Board/Sprites.yy",},
     {"name":"Camera","order":2,"path":"folders/Camera.yy",},
     {"name":"Databases","order":5,"path":"folders/Databases.yy",},
-    {"name":"player board scripts","order":7,"path":"folders/Board/player board scripts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oGameController","order":7,"path":"objects/oGameController/oGameController.yy",},
@@ -14,7 +14,7 @@
     {"name":"randomize_map","order":1,"path":"scripts/randomize_map/randomize_map.yy",},
     {"name":"is_square_valid","order":3,"path":"scripts/is_square_valid/is_square_valid.yy",},
     {"name":"generate_board","order":1,"path":"scripts/generate_board/generate_board.yy",},
-    {"name":"oBoardRender","order":1,"path":"objects/oBoardRender/oBoardRender.yy",},
+    {"name":"oBoardRender","order":8,"path":"objects/oBoardRender/oBoardRender.yy",},
     {"name":"macros","order":3,"path":"scripts/macros/macros.yy",},
     {"name":"setup_board_camera","order":1,"path":"scripts/setup_board_camera/setup_board_camera.yy",},
     {"name":"get_ease_data","order":2,"path":"scripts/get_ease_data/get_ease_data.yy",},
