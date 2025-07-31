@@ -4,16 +4,29 @@ function resolve_conflict(_row,_col){
 	var _cardinal_dirs = [[0,1],[1,0],[0,-1],[-1,0]]
 	
 	camera_shake(4,0.7)
-   
+	
+	
 	//Move them back to their starting square, if there is someone already there create a conflict
 	for(var i = 0; i < _base_len; i ++){
 		var _current_entity = array_pop(_entities)
 		
+		
 		//Animate the hit
 		_current_entity.collision()
+		
+		repeat(irandom_range(2,4)){
+			create_debris(_current_entity.xTo, _current_entity.yTo)
+		}
+		
 
+		if _current_entity.still{
+			continue	
+		}
+			
 		//move back and collide with anyone taht just went to that square
-		var _dir = _cardinal_dirs[((4 + _current_entity.dir - 2) mod 4)]
+		var _oppisite_dir = ((4 + _current_entity.dir - 2) mod 4)
+		
+		var _dir = _cardinal_dirs[_oppisite_dir]
 		var _old_row = _current_entity.row + _dir[0]
 		var _old_col = _current_entity.col + _dir[1]
 
@@ -39,12 +52,11 @@ function resolve_conflict(_row,_col){
 		_current_entity.row = _old_row
 		_current_entity.col = _old_col
 
-	
+		//_current_entity.dir = _oppisite_dir
 
-		
-		//move_prep(_current_entity, ((4 + _current_entity.dir - 2) mod 4))
-
-
+		//REMOVE THIS IF YOU WANT TO MAKE A CHARACTER MOVE MULTIPLE TIMES
+		//Bug does exist that makes 2 characters get stuck on each other
+		_current_entity.still = true
 	}
 	
 	

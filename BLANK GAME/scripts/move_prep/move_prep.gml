@@ -17,26 +17,14 @@ function move_prep(_inst, _dir){
 
 
 	if !is_square_valid(_desired_row,_desired_col){
+		add_inst_to_square(_row, _col, _inst, true)
 		return false
 	}
 
 	//If there is no object here we can try to tell the desired placement
 	if global.map[# _desired_row, _desired_col][TILE.OBJECT] = noone{
 		
-		var _new_entity_placement = entity_map[# _desired_row, _desired_col]
-		
-		//If an entity already wants to move here
-		if _new_entity_placement != 0{
-			if is_array(_new_entity_placement){
-				array_push(_new_entity_placement,_inst)	
-			}else{
-				entity_map[# _desired_row, _desired_col] = [_new_entity_placement , _inst]
-				array_push(conflict_squares,[_desired_row, _desired_col])
-
-			}
-		}else{
-			entity_map[# _desired_row, _desired_col] = _inst
-		}
+		add_inst_to_square(_desired_row,_desired_col,_inst)
 		
 		
 		_inst.row = _desired_row
@@ -47,4 +35,25 @@ function move_prep(_inst, _dir){
 
 
 	return false
+}
+
+
+function add_inst_to_square(_row, _col, _inst, _stationary = false){
+	var _new_entity_placement = entity_map[# _row, _col]
+		
+	//If an entity already wants to move here
+	if _new_entity_placement != 0{
+		if is_array(_new_entity_placement){
+			array_push(_new_entity_placement,_inst)	
+		}else{
+			entity_map[# _row, _col] = [_new_entity_placement , _inst]
+			array_push(conflict_squares,[_row, _col])
+
+		}
+	}else{
+		entity_map[# _row, _col] = _inst
+	}
+	
+	
+	_inst.still = _stationary
 }

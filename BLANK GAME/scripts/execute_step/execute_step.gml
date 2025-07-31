@@ -14,12 +14,19 @@ function execute_step(){
 
 		
 	}else{
-
+		
+		
+		//Everything else is done at the same time here
+		
 		with pEntity{
 			update_pos()	
 		}
 
 		ds_grid_destroy(entity_map)
+		
+		current_turn ++
+		
+		if current_turn > 9 current_turn = 0
 		
 		switch_state(player_on_board)
 	}

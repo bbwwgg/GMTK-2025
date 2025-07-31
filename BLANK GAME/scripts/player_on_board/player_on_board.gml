@@ -27,6 +27,7 @@ function player_on_board(){
 		if( _device_mouse_x < selected_start_mousex - move_threshold || selected_start_mousex + move_threshold < _device_mouse_x ||
 			_device_mouse_y < selected_start_mousey - move_threshold || selected_start_mousey + move_threshold < _device_mouse_y){ 
 			oCamera.lock_to_board = false
+
 			switch_state(player_dragging_camera)
 		}
 		

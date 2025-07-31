@@ -1,3 +1,6 @@
+randomize()
+
+
 enum ENTITY_STATE{
 	MOVE,
 	COLLIDE,
@@ -15,9 +18,9 @@ commands = []
 
 state = ENTITY_STATE.MOVE
 
-//repeat(irandom_range(2,8)){
-//	array_push(commands,irandom(3))
-//}
+repeat(irandom_range(2,8)){
+	array_push(commands,irandom(3))
+}
 
 
 normal_move_time = 12

@@ -12,7 +12,6 @@ if time <= move_time{
 		if time + 1 > move_time{
 			
 			update_pos()
-
 			move_time = collide_move_time
 			
 		}
