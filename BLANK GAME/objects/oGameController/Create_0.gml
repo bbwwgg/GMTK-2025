@@ -1,17 +1,9 @@
 randomize()
 command_node_database()
-
-
-state = player_on_board
-
-global.biom = -1
-
 instance_create_layer(0,0,"Instances",oCamera)
-instance_create_layer(0,0,"Instances",oBoardRender)
 
-repeat(10){
-	create_entity(irandom(global.board_width),irandom(global.board_height),irandom(2))
-}
+
+state = load_board
 
 selected_start_mousex = 0
 selected_start_mousey = 0
@@ -21,11 +13,8 @@ current_turn = 0
 current_priority = 0
 
 time = 0
-step_delay = 15
+step_delay = 13
 
-entity_map = ds_grid_create(1,1)
-
-current_turn_length = 3
 
 
 
@@ -35,6 +24,7 @@ function switch_state(_state){
 	switch _state{
 		case execute_step:
 			step_command = []
+			
 			get_all_entity_commands()
 			current_turn = 0
 			current_priority = 0
@@ -51,6 +41,7 @@ function switch_state(_state){
 			with pEntity{
 				other.entity_map[# col, row] = self
 				visited = false
+				still = false
 			}
 			
 			current_priority = 0

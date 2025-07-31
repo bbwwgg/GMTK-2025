@@ -4,7 +4,7 @@ function create_text_gui(_x,_y,_text, _color){
 		vsp = random_range(-1,-2)
 		hsp = random_range(-1,1)
 		vsp_change = 0.1
-		alpha_change =  0.02
+		alpha_change =  0.015
 		text = _text
 		color = _color
 		

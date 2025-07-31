@@ -1,1 +1,1 @@
-game_restart()
+screen_transition(Room1)

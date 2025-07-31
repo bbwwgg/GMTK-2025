@@ -4,7 +4,9 @@ randomize()
 enum ENTITY_STATE{
 	MOVE,
 	COLLIDE,
-	RECOVER
+	RECOVER,
+	FALLING,
+	RESPAWN
 }
 
 image_speed = 0
@@ -19,7 +21,7 @@ commands = []
 state = ENTITY_STATE.MOVE
 
 repeat(irandom_range(2,8)){
-	array_push(commands,irandom(3))
+	array_push(commands,irandom(4))
 }
 
 
@@ -51,6 +53,11 @@ function collision(){
 	move_time = collide_move_time
 }
 
+function falling(){
+	//change the sprite
+	update_pos()
+	state = ENTITY_STATE.FALLING
+}
 
 
 time = move_time

@@ -8,7 +8,7 @@ function execute_step(){
 	
 	
 	switch (current_priority){
-		case STEP_PRIOTITY.PRESTEP:
+		default:
 			var _prestep_commands = step_command[current_turn][current_priority]
 			
 			var _raw_command_data = array_pop(_prestep_commands)
@@ -17,6 +17,7 @@ function execute_step(){
 				time = 0 
 				current_priority ++
 				init_step()
+				
 				return
 			}
 
@@ -51,6 +52,15 @@ function execute_step(){
 		break
 		case STEP_PRIOTITY.MOVE:
 		
+			if array_length(falling_conflicts) > 0{
+				
+				
+				resolve_falling_conflict(array_pop(falling_conflicts))
+				time = -step_delay*2
+				
+				return
+			}
+		
 			if array_length(conflict_squares) > 0{
 		
 				var _cur_conflict = array_pop(conflict_squares)
@@ -66,7 +76,6 @@ function execute_step(){
 				with pEntity{
 					update_pos()	
 				}
-				
 				current_priority ++
 				init_step()
 				

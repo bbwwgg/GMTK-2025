@@ -53,9 +53,30 @@ function command_node_database(){
 		cost  : 0,
 		sell_price : 3,
 		sprite : sHitDebris,
-		priority : STEP_PRIOTITY.PRESTEP
+		priority : STEP_PRIOTITY.POSTSTEP
 	}
 
+	command_node_DB[5] = {
+		name : "Move To Player",
+		description : "Move towards the player",
+		command_script : move_to_player,
+		cost  : 0,
+		sell_price : 3,
+		sprite : sHitDebris,
+		priority : STEP_PRIOTITY.MOVE
+	}
+	
+	command_node_DB[6] = {
+		name : "Move To Enemy",
+		description : "Move towards the closest enemy",
+		command_script : move_to_enemy,
+		cost  : 0,
+		sell_price : 3,
+		sprite : sHitDebris,
+		priority : STEP_PRIOTITY.MOVE
+	}
+	
+	
 
 
 

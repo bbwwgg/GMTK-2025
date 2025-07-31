@@ -3,6 +3,7 @@ function resolve_conflict(_row,_col){
 	var _base_len = array_length(_entities)
 	var _cardinal_dirs = [[0,1],[1,0],[0,-1],[-1,0]]
 	
+	
 	camera_shake(4,0.7)
 	
 	

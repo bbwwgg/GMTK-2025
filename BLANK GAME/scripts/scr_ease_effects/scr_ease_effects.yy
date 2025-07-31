@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "player states",
-    "path": "folders/player states.yy",
+    "name": "global",
+    "path": "folders/global.yy",
   },
 }

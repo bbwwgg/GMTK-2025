@@ -17,8 +17,30 @@ if time <= move_time{
 		}
 		
 	break
+	case ENTITY_STATE.FALLING:
+		
+		var shorter_move = floor(move_time*0.75)
+	
+		x = get_ease_data(MOVE_TYPE.EASE_OUT,time,xFrom,xTo-xFrom,shorter_move)
+		y = get_ease_data(MOVE_TYPE.EASE_OUT,time,yFrom,yTo-yFrom,shorter_move)	
+		
+		if time + 1 > shorter_move{
+			image_alpha = 0
+			
+			x = TileToScreenX(row,col)
+			y = TileToScreenY(row,col)
+			
+			time = 0
+			state = ENTITY_STATE.RESPAWN
+			move_time = 22
+		}
+	break
+	case  ENTITY_STATE.RESPAWN:
+		image_alpha = get_ease_data(MOVE_TYPE.EASE_IN,time,0,1,move_time)
+	break
 	}
 	depth = -y
+	
 	
 	time ++
 }

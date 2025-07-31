@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "BLANK GAME",
-    "path": "BLANK GAME.yyp",
+    "name": "player board scripts",
+    "path": "folders/player states/player board scripts.yy",
   },
 }

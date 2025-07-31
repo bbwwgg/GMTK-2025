@@ -38,6 +38,7 @@ function player_on_board(){
 	}
 	
 	if keyboard_check_pressed(vk_space){
+		global.player_entity.commands = [0,2,3,4]
 		switch_state(execute_step)
 	}
 

@@ -5,9 +5,10 @@ function get_all_entity_commands(){
 	
 	for (var i = 0; i < instance_number(pEntity); i++){
 		var _inst = instance_find(pEntity, i);
+
 			
 		//Get the entities commands
-		var _new_commands = _inst.commands
+		var _new_commands = _inst.commands	
 		
 		if is_undefined(_new_commands){
 			exit	

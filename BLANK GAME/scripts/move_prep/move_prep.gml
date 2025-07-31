@@ -19,13 +19,23 @@ function move_prep(_inst, _dir){
 		add_inst_to_square(_row, _col, _inst, true)
 		return false
 	}
-
+	
+	//Falling if we reach a hole
+	if global.map[# _desired_row, _desired_col][TILE.SPRITE] == 0{
+		
+		array_push(oGameController.falling_conflicts,_inst)
+		
+		_inst.row = _desired_row
+		_inst.col = _desired_col
+		
+		return false
+	}
+	
 	//If there is no object here we can try to tell the desired placement
 	if global.map[# _desired_row, _desired_col][TILE.OBJECT] = noone{
 		
 		add_inst_to_square(_desired_row,_desired_col,_inst)
-		
-		
+
 		_inst.row = _desired_row
 		_inst.col = _desired_col
 		

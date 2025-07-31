@@ -1,10 +1,22 @@
 function init_step(){
 
 	conflict_squares = []
+	falling_conflicts = []
 	
 	var _step_commands =  step_command[current_turn]
 	if is_undefined(_step_commands){return}
+
+	if current_priority >= STEP_PRIOTITY.COUNT{
+		current_turn ++
+		if current_turn = current_turn_length{
+			//End the turn
+			switch_state(player_on_board)
+			return
+		}
+		current_priority = 0
+	}
 	
+
 	while is_undefined(_step_commands[current_priority]){
 		current_priority ++
 		
@@ -20,9 +32,7 @@ function init_step(){
 	}
 	
 	switch (current_priority){
-		
-		case STEP_PRIOTITY.PLAYER:
-		break
+
 		case STEP_PRIOTITY.MOVE:
 		
 			//Entity map used to move all entities at the same time
