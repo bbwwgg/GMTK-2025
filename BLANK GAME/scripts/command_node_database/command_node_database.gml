@@ -8,7 +8,7 @@ function command_node_database(){
 		cost  : 0,
 		sell_price : 3,
 		sprite : sHitDebris,
-		priority : STEP_PRIOTITY.STEP
+		priority : STEP_PRIOTITY.MOVE
 	}
 
 	command_node_DB[1] = {
@@ -19,7 +19,7 @@ function command_node_database(){
 		cost  : 0,
 		sell_price : 3,
 		sprite : sHitDebris,
-		priority : STEP_PRIOTITY.STEP
+		priority : STEP_PRIOTITY.MOVE
 	}
 
 	command_node_DB[2] = {
@@ -30,7 +30,7 @@ function command_node_database(){
 		cost  : 0,
 		sell_price : 3,
 		sprite : sHitDebris,
-		priority : STEP_PRIOTITY.STEP
+		priority : STEP_PRIOTITY.MOVE
 	}
 
 
@@ -42,8 +42,20 @@ function command_node_database(){
 		cost  : 0,
 		sell_price : 3,
 		sprite : sHitDebris,
-		priority : STEP_PRIOTITY.STEP
+		priority : STEP_PRIOTITY.MOVE
 	}
+	
+	command_node_DB[4] = {
+		name : "Heal",
+		description : "Heal 1 health",
+		command_script : buff_entity,
+		command_vars : [1,1], //Not required, but if put it will run the command with the arg(s)
+		cost  : 0,
+		sell_price : 3,
+		sprite : sHitDebris,
+		priority : STEP_PRIOTITY.PRESTEP
+	}
+
 
 
 

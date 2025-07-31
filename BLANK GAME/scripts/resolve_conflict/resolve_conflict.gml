@@ -17,7 +17,8 @@ function resolve_conflict(_row,_col){
 		repeat(irandom_range(2,4)){
 			create_debris(_current_entity.xTo, _current_entity.yTo)
 		}
-		
+		//Do the dmg here
+		create_text_gui(_current_entity.x, _current_entity.y,"-1",#ff5050)
 
 		if _current_entity.still{
 			continue	

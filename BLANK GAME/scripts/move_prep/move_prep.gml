@@ -13,8 +13,7 @@ function move_prep(_inst, _dir){
 	var _desired_col = _col + _location_change[1] 
 	
 	_inst.dir = _dir
-
-
+	_inst.visited = true
 
 	if !is_square_valid(_desired_row,_desired_col){
 		add_inst_to_square(_row, _col, _inst, true)
@@ -39,19 +38,20 @@ function move_prep(_inst, _dir){
 
 
 function add_inst_to_square(_row, _col, _inst, _stationary = false){
-	var _new_entity_placement = entity_map[# _row, _col]
+	
+	var _new_entity_placement = oGameController.entity_map[# _row, _col]
 		
 	//If an entity already wants to move here
 	if _new_entity_placement != 0{
 		if is_array(_new_entity_placement){
 			array_push(_new_entity_placement,_inst)	
 		}else{
-			entity_map[# _row, _col] = [_new_entity_placement , _inst]
-			array_push(conflict_squares,[_row, _col])
+			oGameController.entity_map[# _row, _col] = [_new_entity_placement , _inst]
+			array_push(oGameController.conflict_squares,[_row, _col])
 
 		}
 	}else{
-		entity_map[# _row, _col] = _inst
+		oGameController.entity_map[# _row, _col] = _inst
 	}
 	
 	

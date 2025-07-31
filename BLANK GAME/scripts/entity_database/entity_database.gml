@@ -16,7 +16,7 @@ function entity_database(){
 	ENTITY_ID[2] = {
 		sprite : sGuy,
 		step_priotity : 0,
-		commands : [2]
+		commands : [4]
 	}
 
 	return ENTITY_ID
