@@ -10,14 +10,23 @@ function create_entity(_row, _col, _entity_id){
 		var _new_entity = instance_create_layer(0,0,"Entities",pEntity)
 	
 		global.map[# _row,_col][TILE.ENTITY] = _new_entity
-		_new_entity.row = _row
-		_new_entity.col = _col
 		
-		_new_entity.commands = ENTITY_ID[_entity_id].commands
+		with _new_entity{
 		
-		_new_entity.image_index = _entity_id
+			row = _row
+			col = _col
 		
-		_new_entity.update_pos()
+			commands = ENTITY_ID[_entity_id].commands
+		
+			image_index = _entity_id
+		
+			update_pos()
+
+			x = xTo
+			y = yTo
+			depth= -y
+			time = move_time + 1
+		}
 
 		return true
 	}

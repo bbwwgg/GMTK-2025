@@ -35,5 +35,10 @@ function player_on_board(){
 	if _release{
 		//TODO select entity on mouse
 	}
+	
+	if keyboard_check_pressed(vk_space){
+		switch_state(execute_step)
+	}
+
 
 }

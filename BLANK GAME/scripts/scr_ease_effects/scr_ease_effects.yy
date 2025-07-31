@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "camera_shake",
+  "name": "scr_ease_effects",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Camera",
-    "path": "folders/Camera.yy",
+    "name": "player states",
+    "path": "folders/player states.yy",
   },
 }

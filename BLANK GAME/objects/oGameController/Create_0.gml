@@ -25,8 +25,32 @@ create_entity(1,2,2)
 step_command = []
 current_turn = 0
 
+
+time = 0
+step_delay = 15
+
+entity_map =  noone
+
 get_all_entity_commands()
 
 function switch_state(_state){
 	state = _state
+	
+	switch _state{
+		case execute_step:
+			time = 0
+		
+			var _step_commands =  step_command[current_turn]
+			if is_undefined(_step_commands){return}
+	
+			//Entity map used to move all entities at the same time
+			entity_map = ds_grid_create(global.board_width,global.board_height)
+	
+			conflict_squares = []
+	
+			for(var i = 0; i < array_length(_step_commands); i ++){
+				move_prep(_step_commands[i][0],_step_commands[i][1])		
+			}	
+		break
+	}
 }

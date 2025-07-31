@@ -3,12 +3,15 @@ function resolve_conflict(_row,_col){
 	var _base_len = array_length(_entities)
 	var _cardinal_dirs = [[0,1],[1,0],[0,-1],[-1,0]]
 	
-	camera_shake(6)
+	camera_shake(4,0.7)
    
 	//Move them back to their starting square, if there is someone already there create a conflict
 	for(var i = 0; i < _base_len; i ++){
 		var _current_entity = array_pop(_entities)
 		
+		//Animate the hit
+		_current_entity.collision()
+
 		//move back and collide with anyone taht just went to that square
 		var _dir = _cardinal_dirs[((4 + _current_entity.dir - 2) mod 4)]
 		var _old_row = _current_entity.row + _dir[0]
@@ -36,6 +39,9 @@ function resolve_conflict(_row,_col){
 		_current_entity.row = _old_row
 		_current_entity.col = _old_col
 
+	
+
+		
 		//move_prep(_current_entity, ((4 + _current_entity.dir - 2) mod 4))
 
 
