@@ -1,0 +1,50 @@
+//Used to help all entity movement
+function move_prep(_inst, _dir){
+
+	var _cardinal_dirs = [[0,1],[1,0],[0,-1],[-1,0]]
+	
+	var _location_change = _cardinal_dirs[_dir]
+	
+	
+	var _row = _inst.row
+	var _col = _inst.col 
+	
+	var _desired_row = _row + _location_change[0] 
+	var _desired_col = _col + _location_change[1] 
+	
+	_inst.dir = _dir
+
+
+
+	if !is_square_valid(_desired_row,_desired_col){
+		return false
+	}
+
+	//If there is no object here we can try to tell the desired placement
+	if global.map[# _desired_row, _desired_col][TILE.OBJECT] = noone{
+		
+		var _new_entity_placement = entity_map[# _desired_row, _desired_col]
+		
+		//If an entity already wants to move here
+		if _new_entity_placement != 0{
+			if is_array(_new_entity_placement){
+				array_push(_new_entity_placement,_inst)	
+			}else{
+				entity_map[# _desired_row, _desired_col] = [_new_entity_placement , _inst]
+				array_push(conflict_squares,[_desired_row, _desired_col])
+
+			}
+		}else{
+			entity_map[# _desired_row, _desired_col] = _inst
+		}
+		
+		
+		_inst.row = _desired_row
+		_inst.col = _desired_col
+		
+		return true
+	}
+
+
+	return false
+}

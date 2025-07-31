@@ -1,4 +1,3 @@
-
 if current_width != target_width{
 	var prev_height = current_height
 	var prev_width = current_width
@@ -33,5 +32,16 @@ if lock_to_board{
 	y_to = clamp(y_to,0,global.camera_max_height-current_height)
 }
 
+// Camera shake update
+if (shake_strength > 0.01) {
+	shake_offset_x = random_range(-shake_strength, shake_strength);
+	shake_offset_y = random_range(-shake_strength, shake_strength);
+	
+	// Apply decay
+	shake_strength *= shake_decay;
+} else {
+	shake_offset_x = 0;
+	shake_offset_y = 0;
+}
 
-camera_set_view_pos(global.Camera, x, y)
+camera_set_view_pos(global.Camera, x+shake_offset_x, y+shake_offset_y)

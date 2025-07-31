@@ -36,5 +36,4 @@ function get_all_entity_commands(){
 		
 	}
 	
-	show_message(step_command)
 }
