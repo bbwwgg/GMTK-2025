@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "is_square_valid",
+  "name": "get_all_entity_commands",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

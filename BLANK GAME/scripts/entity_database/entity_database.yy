@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "is_square_valid",
+  "name": "entity_database",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "BLANK GAME",
-    "path": "BLANK GAME.yyp",
+    "name": "Databases",
+    "path": "folders/Databases.yy",
   },
 }

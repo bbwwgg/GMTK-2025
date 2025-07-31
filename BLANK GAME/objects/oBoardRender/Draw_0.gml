@@ -15,7 +15,7 @@ for (var tX = 0; tX < global.board_width; tX++)
 		
 		tileIndex = tileData[TILE.SPRITE]
 		tileZ = tileData[TILE.Z]
-		tileEntity = tileData[TILE.ENTITYS]
+		tileEntity = tileData[TILE.ENTITY]
 		effect = tileData[TILE.HIGHLIGHT_EFFECT]
 		if (tileIndex != 0){
 			//tileZ += -1.6*sin(time/35 + tX)

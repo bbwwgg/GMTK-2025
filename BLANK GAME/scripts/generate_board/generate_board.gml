@@ -78,7 +78,11 @@ function generate_board(_biome, _width, _height){
 			thisTile[TILE.SPRITE] = tileMapData
 			thisTile[TILE.HIGHLIGHT_EFFECT] = -1
 			thisTile[TILE.Z] = 0
-			thisTile[TILE.ENTITYS] = noone
+			
+			
+			//TODO add genteration entities and objects
+			thisTile[TILE.ENTITY] = noone	
+			thisTile[TILE.OBJECT] = noone
 			base_board[# tX, tY] = thisTile;
 		}	
 	}

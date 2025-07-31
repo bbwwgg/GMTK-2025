@@ -6,7 +6,7 @@ while true{
 	
 	var tile_count = global.board_width * global.board_height
 	
-	if tile_count < 92{
+	if tile_count < 82{
 		break	
 	}
 

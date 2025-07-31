@@ -1,0 +1,40 @@
+function get_all_entity_commands(){
+	var _turn_length = 10
+	
+	step_command = array_create(10, undefined)
+	
+	for (var i = 0; i < instance_number(pEntity); i++){
+		var _inst = instance_find(pEntity, i);
+			
+		//Get the entities commands
+		var _new_commands = _inst.commands
+		
+		if is_undefined(_new_commands){
+			exit	
+		}
+		
+		var _command_length = array_length(_new_commands)
+		
+		for(var j = 0; j < _turn_length; j++){
+			var _cur_index = j mod _command_length
+			
+			var _cur_command = _new_commands[_cur_index]
+			
+			
+			//Check if this step has any commands set
+			var _formated_command = [_inst, _cur_command]
+			
+			if is_undefined(step_command[j]){
+				step_command[j] = [_formated_command]
+			}else{
+				array_push(step_command[j], _formated_command)
+			}
+			
+		}
+		
+		
+		
+	}
+	
+	show_message(step_command)
+}

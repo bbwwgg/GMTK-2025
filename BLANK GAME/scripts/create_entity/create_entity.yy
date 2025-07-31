@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "is_square_valid",
+  "name": "create_entity",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
