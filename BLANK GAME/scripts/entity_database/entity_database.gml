@@ -8,7 +8,7 @@ function entity_database(){
 	
 	ENTITY_ID[1] = {
 		sprite : sGuy,
-		commands : [0]
+		commands : [5]
 	}
 	
 	ENTITY_ID[2] = {
