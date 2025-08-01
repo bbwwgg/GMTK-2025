@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_cardinal_direction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_cardinal_direction",
+  "parent":{
+    "name":"Nodes",
+    "path":"folders/Nodes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

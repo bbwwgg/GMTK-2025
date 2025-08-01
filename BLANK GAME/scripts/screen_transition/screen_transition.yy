@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"screen_transition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"screen_transition",
+  "parent":{
+    "name":"GMTK2025",
+    "path":"GMTK2025.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

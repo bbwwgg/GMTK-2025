@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"move_to_enemy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"move_to_enemy",
+  "parent":{
+    "name":"Nodes",
+    "path":"folders/Nodes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

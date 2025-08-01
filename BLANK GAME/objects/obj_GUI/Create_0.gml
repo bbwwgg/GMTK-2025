@@ -1,0 +1,1 @@
+show_debug_message("object gui" + string(global.numberCounter))

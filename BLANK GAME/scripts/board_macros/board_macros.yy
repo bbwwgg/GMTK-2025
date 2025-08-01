@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"board_macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"board_macros",
+  "parent":{
+    "name":"Board",
+    "path":"folders/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

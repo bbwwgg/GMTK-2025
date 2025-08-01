@@ -1,0 +1,32 @@
+#macro VIEW_WIDTH 1600//1280//1280//1440 16//(view_get_wport(view_camera[0]))
+#macro VIEW_HEIGHT 900//720//720 //9(view_get_hport(view_camera[0]))
+#macro CAMERA_WIDTH_RATIO 16
+#macro CAMERA_HEIGHT_RATIO 9
+
+#macro CAMERA_SMALLEST_FACTOR 8
+
+#macro VIEW_SIZE_RATIO VIEW_WIDTH / CAMERA_WIDTH_RATIO
+
+#macro ROOM_W 640
+#macro ROOM_H 360
+#macro GUI_X_SCALE 0.5
+#macro GUI_Y_SCALE 0.5
+
+// GAMEPLAY MACROS
+enum MOVE_TYPE{
+	LINEAR,
+	EASE_IN,
+	EASE_OUT,
+	EASE_IN_OUT,
+	EASE_OUT_ELASTIC
+}
+
+enum STEP_PRIOTITY{
+	PRESTEP,
+	PLAYER,
+	MOVE,
+	ATTACK,
+	STEP,
+	POSTSTEP,
+	COUNT
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"buff_entity",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"buff_entity",
+  "parent":{
+    "name":"Nodes",
+    "path":"folders/Nodes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

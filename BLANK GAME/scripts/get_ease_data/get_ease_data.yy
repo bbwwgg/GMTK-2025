@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_ease_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_ease_data",
+  "parent":{
+    "name":"Camera",
+    "path":"folders/Camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
