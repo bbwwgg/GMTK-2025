@@ -13,7 +13,9 @@ current_turn = 0
 current_priority = 0
 
 time = 0
-step_delay = 15
+
+//change this to change the delay between steps
+step_delay = 10
 
 
 //Inventory vars
@@ -93,9 +95,11 @@ function is_command_complete(){
 	return true
 }
 
+
+//////////////////////////CHANGE THIS TO ADD TO INVENTORY/////////////////////////////////////////////////
 setup_node_sizing()
-repeat(18){
-	add_node_to_inventory(create_node(0,0,2,1))
+repeat(12){
+	add_node_to_inventory(create_node(0,0,irandom(4)))//add_node_to_inventory(create_node(0,0,irandom(5),irandom(3)))
 }
 
 function point_in_inventory(_px,_py) {
@@ -120,27 +124,28 @@ function switch_state(_state){
 		case execute_step:
 			step_command = []
 			
+			//get all entity commands
 			get_all_entity_commands()
 			current_turn = 0
 			current_priority = 0
 			
+			//Move camera
 			oCamera.lock_to_board = true
 			with oCamera{	
 				target_width = global.camera_max_width
 				target_height = global.camera_max_height
 			}
 			
-			
+			//Create entity map
 			entity_map = ds_grid_create(global.board_width,global.board_height)
 			
 			with pEntity{
-				other.entity_map[# col, row] = self
 				visited = false
 				still = false
 			}
 			
 			current_priority = 0
-			time = 0	
+			time = step_delay-4	
 			
 			init_step()
 		break

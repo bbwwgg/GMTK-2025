@@ -46,8 +46,16 @@ function player_on_board(){
 	}
 	
 	if keyboard_check_pressed(vk_space){
-		global.player_entity.commands = [0,1,2,3,4]
-		switch_state(execute_step)
+		if is_command_complete(){
+			var _player_commands = [] 
+			for(var i = 0; i < array_length(command_list); i ++){
+				array_push(_player_commands,command_list[i].ID)
+			}
+	
+			global.player_entity.commands = _player_commands
+			switch_state(execute_step)	
+		}
+		
 	}
 
 

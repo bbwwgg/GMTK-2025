@@ -9,15 +9,15 @@ function load_board(){
 		global.player_entity = create_entity(irandom(global.board_width),irandom(global.board_height),0)
 	}
 	
-create_entity(irandom(global.board_width),irandom(global.board_height),1)
-	//repeat(10){
-	//	create_entity(irandom(global.board_width),irandom(global.board_height),irandom_range(1,2))
-	//}
+
+	repeat(irandom_range(3,8)){
+		create_entity(irandom(global.board_width),irandom(global.board_height),irandom_range(1,2))
+	}
 	
 	
 	entity_map = ds_grid_create(1,1)
 
-	current_turn_length = 10
+	current_turn_length = 7
 
 	switch_state(player_on_board)
 

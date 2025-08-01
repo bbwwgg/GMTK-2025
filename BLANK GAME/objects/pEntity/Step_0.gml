@@ -32,7 +32,7 @@ if time <= move_time{
 			
 			time = 0
 			state = ENTITY_STATE.RESPAWN
-			move_time = 22
+			move_time = 8
 		}
 	break
 	case  ENTITY_STATE.RESPAWN:

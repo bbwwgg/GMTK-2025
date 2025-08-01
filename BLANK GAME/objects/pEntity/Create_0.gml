@@ -1,4 +1,12 @@
 randomize()
+//Customizable stats
+max_hp = 99
+hp = max_hp 
+str = 1
+res = 0
+collide_dmg = 1
+
+
 
 
 enum ENTITY_STATE{
@@ -19,10 +27,6 @@ dir = 0
 commands = []
 
 state = ENTITY_STATE.MOVE
-
-repeat(irandom_range(2,8)){
-	array_push(commands,irandom(4))
-}
 
 
 normal_move_time = 12

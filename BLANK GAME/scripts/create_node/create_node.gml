@@ -8,6 +8,7 @@ function create_node(_x,_y, _id, _shape = 0){
 	
 	var _node =  new node(_id)
 	
+	_node.ID = _id
 	_node.sprite = _raw_node_data.sprite
 	_node.shape = _shape
 	_node.color = c_white

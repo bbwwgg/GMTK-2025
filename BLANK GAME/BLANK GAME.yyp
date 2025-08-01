@@ -37,6 +37,8 @@
   "resources": [
     {"id":{"name":"node","path":"scripts/node/node.yy",},},
     {"id":{"name":"tile_empty","path":"scripts/tile_empty/tile_empty.yy",},},
+    {"id":{"name":"sOtherone","path":"sprites/sOtherone/sOtherone.yy",},},
+    {"id":{"name":"deal_dmg","path":"scripts/deal_dmg/deal_dmg.yy",},},
     {"id":{"name":"add_node_to_inventory","path":"scripts/add_node_to_inventory/add_node_to_inventory.yy",},},
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"TileToScreen","path":"scripts/TileToScreen/TileToScreen.yy",},},

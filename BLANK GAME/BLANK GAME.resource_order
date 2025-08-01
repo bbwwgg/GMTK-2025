@@ -19,6 +19,8 @@
   ],
   "ResourceOrderSettings": [
     {"name":"tile_empty","order":9,"path":"scripts/tile_empty/tile_empty.yy",},
+    {"name":"sOtherone","order":4,"path":"sprites/sOtherone/sOtherone.yy",},
+    {"name":"deal_dmg","order":15,"path":"scripts/deal_dmg/deal_dmg.yy",},
     {"name":"add_node_to_inventory","order":3,"path":"scripts/add_node_to_inventory/add_node_to_inventory.yy",},
     {"name":"oGameController","order":2,"path":"objects/oGameController/oGameController.yy",},
     {"name":"TileToScreen","order":4,"path":"scripts/TileToScreen/TileToScreen.yy",},

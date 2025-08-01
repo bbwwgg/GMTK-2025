@@ -14,7 +14,7 @@ function player_dragging_node(){
 	var _node_x = selected_node.x
 	var _node_y = selected_node.y
 	
-	if rectangle_in_rectangle(_device_mouse_x, _device_mouse_y, _device_mouse_x+_node_width, _device_mouse_y+_node_height,x_offset,y_offset,x_offset+command_width,y_offset+command_height)!=0{
+	if ! is_command_complete() and rectangle_in_rectangle(_device_mouse_x, _device_mouse_y, _device_mouse_x+_node_width, _device_mouse_y+_node_height,x_offset,y_offset,x_offset+command_width,y_offset+command_height)!=0{
 	    // Calculate the slot index directly
         var index = floor(( _device_mouse_x- x_offset) / (node_base_width * node_scale));
         index = clamp(index, 0, list_max - 1);
@@ -77,7 +77,7 @@ function player_dragging_node(){
 		
 		//If this isnt a valid area for a nide
 		var _index = -1
-		if (i >= 0 || i < nodes_per_row || j >= 0 || j < node_row_count) {
+		if (i >= 0 and i < nodes_per_row and j >= 0 and j < node_row_count) {
 	        _index = i + j * nodes_per_row;
 	    }
 
@@ -99,12 +99,13 @@ function player_dragging_node(){
 	if !_held{
 
 		//Add the held node to the command line
+		//show_message([temp_command_node_index,prev_index])
 		if temp_command_node_index != -1{
 			command_list[temp_command_node_index] = selected_node
 			rearange_inventory()
 		}else{		
 			//Add it back to the inventory
-			if prev_index = -1 or prev_index >= ds_list_size(command_node_inventory){
+			if prev_index <= -1 or prev_index >= ds_list_size(command_node_inventory){
 				add_node_to_inventory(selected_node)
 			}else{
 				ds_list_insert(command_node_inventory,prev_index,selected_node)	

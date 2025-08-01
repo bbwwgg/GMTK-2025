@@ -5,7 +5,28 @@ function resolve_conflict(_row,_col){
 	
 	
 	camera_shake(4,0.7)
+	//Change this into arrays so that multple go atr 
+	var _dmg_to_deal = array_create(_base_len,0)
+	//Deal the damange
+	for(var i = 0; i < _base_len; i ++){
+		var _dmg_dealer = _entities[i]
+		
+		for(var j = 0; j < _base_len; j ++){
+			if j = i{
+				continue	
+			}
+
+			deal_dmg(_entities[j], _dmg_dealer.collide_dmg)
+			
+			//Debris
+			repeat(irandom_range(2,4)){
+				create_debris(_dmg_dealer.xTo, _dmg_dealer.yTo)
+			}
+			
+		}
+	}
 	
+
 	
 	//Move them back to their starting square, if there is someone already there create a conflict
 	for(var i = 0; i < _base_len; i ++){
@@ -14,12 +35,8 @@ function resolve_conflict(_row,_col){
 		
 		//Animate the hit
 		_current_entity.collision()
+		_current_entity.visited = true
 		
-		repeat(irandom_range(2,4)){
-			create_debris(_current_entity.xTo, _current_entity.yTo)
-		}
-		//Do the dmg here
-		create_text_gui(_current_entity.x, _current_entity.y,"-1",#ff5050)
 
 		if _current_entity.still{
 			continue	

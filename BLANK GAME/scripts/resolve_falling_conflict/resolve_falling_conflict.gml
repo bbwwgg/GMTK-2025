@@ -11,14 +11,16 @@ function resolve_falling_conflict(_inst){
 		
 	//Animate the hit
 	_inst.falling()
-		
+	_inst.visited = true
+	
+	
 	repeat(irandom_range(2,4)){
 		create_debris(_inst.xTo, _inst.yTo)
 	}
 	
 	//Do the dmg here
-	create_text_gui(_inst.x, _inst.y,"-2",#ff5050)
-
+	deal_dmg(_inst, 2)
+	
 	//move back and collide with anyone taht just went to that square
 	var _oppisite_dir = ((4 + _inst.dir - 2) mod 4)
 		
