@@ -13,6 +13,7 @@ function init_step(){
 			switch_state(player_on_board)
 			return
 		}
+		time = 0
 		current_priority = 0
 	}
 	
@@ -33,6 +34,8 @@ function init_step(){
 	
 	switch (current_priority){
 
+		
+		case STEP_PRIOTITY.PLAYER:
 		case STEP_PRIOTITY.MOVE:
 		
 			//Entity map used to move all entities at the same time

@@ -20,9 +20,10 @@ function player_on_board(){
 	if _click{
 		selected_start_mousex = _device_mouse_x
 		selected_start_mousey = _device_mouse_y
+		can_hold = true
 	}
 	
-	if _held{
+	if _held and can_hold{
 		var move_threshold = 8
 		if( _device_mouse_x < selected_start_mousex - move_threshold || selected_start_mousex + move_threshold < _device_mouse_x ||
 			_device_mouse_y < selected_start_mousey - move_threshold || selected_start_mousey + move_threshold < _device_mouse_y){ 
@@ -37,8 +38,15 @@ function player_on_board(){
 		//TODO select entity on mouse
 	}
 	
+	if point_in_inventory(_device_mouse_x,_device_mouse_y){
+		switch_state(player_on_nodes)
+		inv_state = INVENTORY_STATE.SHOWN
+			
+		inv_time = 0
+	}
+	
 	if keyboard_check_pressed(vk_space){
-		global.player_entity.commands = [0,2,3,4]
+		global.player_entity.commands = [0,1,2,3,4]
 		switch_state(execute_step)
 	}
 

@@ -3,11 +3,11 @@ function entity_database(){
 	
 	//Player entity is always 0
 	ENTITY_ID[0] = {
-		sprite : sGuy
+		sprite : sSands
 	}
 	
 	ENTITY_ID[1] = {
-		sprite : sGuy,
+		sprite : sBow,
 		commands : [5]
 	}
 	

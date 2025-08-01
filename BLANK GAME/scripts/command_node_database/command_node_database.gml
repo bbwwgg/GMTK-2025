@@ -7,7 +7,7 @@ function command_node_database(){
 		command_vars : 0, //Not required, but if put it will run the command with the arg(s)
 		cost  : 0,
 		sell_price : 3,
-		sprite : sHitDebris,
+		sprite : sNodeArrow0,
 		priority : STEP_PRIOTITY.MOVE
 	}
 
@@ -18,7 +18,7 @@ function command_node_database(){
 		command_vars : 1, //Not required, but if put it will run the command with the arg(s)
 		cost  : 0,
 		sell_price : 3,
-		sprite : sHitDebris,
+		sprite : sNodeArrow1,
 		priority : STEP_PRIOTITY.MOVE
 	}
 
@@ -29,7 +29,7 @@ function command_node_database(){
 		command_vars : 2, //Not required, but if put it will run the command with the arg(s)
 		cost  : 0,
 		sell_price : 3,
-		sprite : sHitDebris,
+		sprite : sNodeArrow2,
 		priority : STEP_PRIOTITY.MOVE
 	}
 
@@ -41,7 +41,7 @@ function command_node_database(){
 		command_vars : 3, //Not required, but if put it will run the command with the arg(s)
 		cost  : 0,
 		sell_price : 3,
-		sprite : sHitDebris,
+		sprite : sNodeArrow3,
 		priority : STEP_PRIOTITY.MOVE
 	}
 	
@@ -58,7 +58,7 @@ function command_node_database(){
 
 	command_node_DB[5] = {
 		name : "Move To Player",
-		description : "Move towards the player",
+		description : "Move towards the player, this is useless to you",
 		command_script : move_to_player,
 		cost  : 0,
 		sell_price : 3,

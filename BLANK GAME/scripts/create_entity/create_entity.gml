@@ -19,7 +19,9 @@ function create_entity(_row, _col, _entity_id){
 			if struct_exists(ENTITY_ID[_entity_id],"commands"){
 				commands = ENTITY_ID[_entity_id].commands
 			}
-		
+			
+			sprite_index =  ENTITY_ID[_entity_id].sprite
+			
 			image_index = _entity_id
 		
 			update_pos()

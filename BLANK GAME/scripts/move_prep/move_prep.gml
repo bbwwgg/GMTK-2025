@@ -12,11 +12,12 @@ function move_prep(_inst, _dir){
 	var _desired_row = _row + _location_change[0] 
 	var _desired_col = _col + _location_change[1] 
 	
-	_inst.dir = _dir
+	
 	_inst.visited = true
 
 	if !is_square_valid(_desired_row,_desired_col){
 		add_inst_to_square(_row, _col, _inst, true)
+		_inst.dir = _dir
 		return false
 	}
 	
@@ -27,7 +28,7 @@ function move_prep(_inst, _dir){
 		
 		_inst.row = _desired_row
 		_inst.col = _desired_col
-		
+		_inst.dir = _dir
 		return false
 	}
 	
@@ -38,7 +39,7 @@ function move_prep(_inst, _dir){
 
 		_inst.row = _desired_row
 		_inst.col = _desired_col
-		
+		_inst.dir = _dir
 		return true
 	}
 

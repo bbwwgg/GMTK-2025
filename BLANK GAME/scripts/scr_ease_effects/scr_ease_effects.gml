@@ -21,19 +21,25 @@ function ease_in_out(t,b,c,d){
 }
 
 function ease_out_elastic(t,b,c,d, bounce = .4){
-	var s = 1.7
-	var p = 0
-	var a = c
-	if (t==0) return b;
-	t/=d
-	if (t ==1) return b+c;
-	if (!p) p =d*bounce
-	if (a < abs(c)){
-		a=c
-		s=p/4
-	}else{
-		s = p/(2*pi)*arcsin(c/a)	
-	}
+	try{
+		var s = 1.7
+		var p = 0
+		var a = c
+		if (t==0) return b;
+		t/=d
+		if (t ==1) return b+c;
+		if (!p) p =d*bounce
+		if (a < abs(c)){
+			a=c
+			s=p/4
+		}else{
+			s = p/(2*pi)*arcsin(c/a)	
+		}
 	
-	return a*power(2,-10*t)*sin((t*d-s)*(2*pi)/p)+c+b
+		return a*power(2,-10*t)*sin((t*d-s)*(2*pi)/p)+c+b
+	}
+	catch(_exception)
+	{
+		return 0;	
+	}
 }
