@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"create_text_gui",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_text_gui",
+  "parent":{
+    "name":"Effects",
+    "path":"folders/Effects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

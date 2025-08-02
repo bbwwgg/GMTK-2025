@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"entity_database",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"entity_database",
+  "parent":{
+    "name":"Databases",
+    "path":"folders/Databases.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

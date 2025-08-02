@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tile_empty",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tile_empty",
+  "parent":{
+    "name":"Board",
+    "path":"folders/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

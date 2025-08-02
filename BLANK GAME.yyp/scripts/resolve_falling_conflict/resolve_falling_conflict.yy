@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"resolve_falling_conflict",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"resolve_falling_conflict",
+  "parent":{
+    "name":"Entity",
+    "path":"folders/Entity.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

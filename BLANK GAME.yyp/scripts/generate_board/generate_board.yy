@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"generate_board",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"generate_board",
+  "parent":{
+    "name":"Board",
+    "path":"folders/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

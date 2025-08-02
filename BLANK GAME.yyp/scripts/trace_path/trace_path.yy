@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"trace_path",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"trace_path",
+  "parent":{
+    "name":"astar",
+    "path":"folders/pathfinding/astar.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

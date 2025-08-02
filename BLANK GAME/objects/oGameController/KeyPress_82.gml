@@ -1,1 +1,0 @@
-screen_transition(Room1)

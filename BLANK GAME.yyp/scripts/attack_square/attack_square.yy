@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"attack_square",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"attack_square",
+  "parent":{
+    "name":"Nodes",
+    "path":"folders/Nodes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"is_square_valid",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_square_valid",
+  "parent":{
+    "name":"Board",
+    "path":"folders/Board.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

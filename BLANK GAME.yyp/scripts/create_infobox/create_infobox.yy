@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"create_infobox",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_infobox",
+  "parent":{
+    "name":"Infobox",
+    "path":"folders/Infobox.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

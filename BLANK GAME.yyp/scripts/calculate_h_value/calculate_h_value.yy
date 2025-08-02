@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"calculate_h_value",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"calculate_h_value",
+  "parent":{
+    "name":"astar",
+    "path":"folders/pathfinding/astar.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

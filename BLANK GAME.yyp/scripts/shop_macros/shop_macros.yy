@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"shop_macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"shop_macros",
+  "parent":{
+    "name":"Shop",
+    "path":"folders/Shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
