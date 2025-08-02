@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"create_shop_node",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_shop_node",
+  "parent":{
+    "name":"Shop",
+    "path":"folders/Shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"is_square_unblocked",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_square_unblocked",
+  "parent":{
+    "name":"astar",
+    "path":"folders/pathfinding/astar.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ease_effects",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ease_effects",
+  "parent":{
+    "name":"global",
+    "path":"folders/global.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tile_database",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tile_database",
+  "parent":{
+    "name":"Databases",
+    "path":"folders/Databases.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

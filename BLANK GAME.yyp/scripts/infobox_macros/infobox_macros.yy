@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"infobox_macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"infobox_macros",
+  "parent":{
+    "name":"Infobox",
+    "path":"folders/Infobox.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
